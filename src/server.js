@@ -24,7 +24,7 @@ app.use(
   })
 );
 
-app.use("/src/router/auth", userRoutes);
+app.use("./src/router/auth", userRoutes);
 app.use("/api/production-lines", productionLineRoutes);
 app.use("/api/tablets", tablets);
 app.use("/api/scan", scanTablet);
